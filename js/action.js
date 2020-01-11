@@ -1,14 +1,20 @@
 const content = document.querySelector(".js-content"),
-  like = content.querySelector(".js-like"),
-  image = content.querySelector(".js-up-image");
+  like = content.querySelector(".js-like");
 
 function endEvent() {
-  image.classList.remove("on");
-  image.classList.add("off");
+  const removeImg = like.previousElementSibling;
+  content.removeChild(removeImg);
 }
 function clickLikes() {
-  image.classList.remove("off");
-  image.classList.add("on");
+  let span = document.createElement("span");
+  let img = document.createElement("img");
+  img.classList.add("up-image");
+  img.classList.add("js-up-image");
+  img.classList.add("on");
+  img.setAttribute("src", "./img/imgage.png");
+  span.appendChild(img);
+
+  content.prepend(span);
   setTimeout(endEvent, 1500);
 }
 
