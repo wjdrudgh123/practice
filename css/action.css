@@ -1,0 +1,17 @@
+@keyframes upAnim {
+  0% {
+    transform: translate(10px, -25px);
+  }
+  50% {
+    transform: translate(-20px, -50px);
+  }
+  100% {
+    transform: translate(30px, -100px);
+  }
+}
+
+.on {
+  display: block;
+  position: absolute;
+  animation: upAnim 3s linear forwards;
+}
