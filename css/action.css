@@ -13,5 +13,5 @@
 .on {
   display: block;
   position: absolute;
-  animation: upAnim 3s linear forwards;
+  animation: upAnim 1.5s linear forwards;
 }

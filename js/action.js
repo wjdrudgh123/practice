@@ -9,7 +9,7 @@ function endEvent() {
 function clickLikes() {
   image.classList.remove("off");
   image.classList.add("on");
-  setTimeout(endEvent, 3000);
+  setTimeout(endEvent, 1500);
 }
 
 function init() {
